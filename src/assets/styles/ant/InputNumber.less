@@ -1,0 +1,59 @@
+body {
+  .ant-input-number-group {
+    // height: 32px;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #088bff33 0%, #088bff00 53%, #088bff33 100%);
+    .ant-input-number,
+    .ant-input-number-group-addon {
+      border: none;
+      background: transparent;
+      font-family: PingFang;
+      font-weight: 400;
+      font-size: 20px;
+      color: #7aa3cc;
+      line-height: 20px;
+      border: 1px solid #088bff66;
+    }
+    .ant-input-number {
+      border-radius: 2px 0 0 2px;
+      border-right: none;
+      .ant-input-number-input {
+        height: 32px;
+      }
+    }
+    .ant-input-number-group-addon {
+      border-radius: 0 2px 2px 0;
+      border-left: none;
+    }
+    .ant-input-number-handler-wrap {
+      background: rgba(122, 163, 204, 0.1);
+      .ant-input-number-handler {
+        color: #7aa3cc;
+        border-color: #088bff66;
+      }
+    }
+  }
+  .ant-input-number {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #088bff33 0%, #088bff00 53%, #088bff33 100%);
+    border: 1px solid #088bff66;
+    border-radius: 2px;
+    color: #7aa3cc;
+    font-size: 20px;
+    // font-family: AlibabaPuHuiTi, AlibabaPuHuiTi;
+    .ant-input-number-input::placeholder {
+      color: #7aa3cc;
+    }
+
+    .ant-input-number-handler-wrap {
+      background: linear-gradient(90deg, #088bff33 0%, #088bff00 53%, #088bff33 100%);
+      .ant-input-number-handler-up-inner,
+      .ant-input-number-handler-down-inner {
+        color: #1890ff;
+      }
+      .ant-input-number-handler {
+        border-color: #088bff66;
+      }
+    }
+  }
+}

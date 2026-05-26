@@ -1,0 +1,51 @@
+.ant-pagination {
+  color: #35fff4 !important;
+  font-size: 24px !important;
+  display: flex;
+  align-items: center;
+  > li {
+    display: flex !important;
+    align-items: center;
+  }
+
+  .anticon.anticon-left,
+  .anticon.anticon-right {
+    &::after {
+      color: #7ec2ff;
+      font-family: PingFang;
+      font-weight: 400;
+      font-size: 24px;
+      color: #7ec2ff;
+      line-height: 24px;
+      text-align: center;
+    }
+    svg {
+      display: none;
+    }
+  }
+  .anticon.anticon-left::after {
+    content: '上页';
+  }
+  .anticon.anticon-right::after {
+    content: '下页';
+  }
+}
+.ant-pagination .ant-pagination-prev button,
+.ant-pagination .ant-pagination-next button {
+  color: #7ec2ff;
+}
+.ant-pagination .ant-pagination-disabled .ant-pagination-item-link,
+.ant-pagination .ant-pagination-disabled:hover .ant-pagination-item-link {
+  color: #7ec2ff;
+  opacity: 0.5;
+}
+.ant-pagination.ant-pagination-simple .ant-pagination-simple-pager input {
+  background: linear-gradient(
+    90deg,
+    rgba(8, 139, 255, 0.2) 0%,
+    rgba(8, 139, 255, 0) 53%,
+    rgba(8, 139, 255, 0.2) 100%
+  );
+  border-radius: 2px;
+  border: 1px solid rgba(8, 139, 255, 0.4);
+}

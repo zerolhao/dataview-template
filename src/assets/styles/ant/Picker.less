@@ -1,0 +1,193 @@
+body {
+  .ant-picker {
+    // width: 183px;
+    // height: 26px;
+    background: #010a1e;
+    border: 1px solid rgba(30, 123, 214, 0.8);
+    // margin-left: 8px;
+    img {
+      width: 36px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+    background: linear-gradient(
+      90deg,
+      rgba(8, 139, 255, 0.2) 0%,
+      rgba(8, 139, 255, 0) 53%,
+      rgba(8, 139, 255, 0.2) 100%
+    );
+    .ant-picker-input input {
+      font-family:
+        PingFangSC,
+        PingFang SC;
+      font-weight: 400;
+      font-size: 20px;
+      color: #d4edfd;
+      // text-shadow:
+      //   0px 0px 12px #0091ff,
+      //   0px 0px 5px #0091ff;
+    }
+    .ant-picker-separator,
+    .ant-picker-range-separator,
+    .ant-picker-suffix {
+      color: #7aa3cc;
+    }
+  }
+  .ant-picker.ant-picker-disabled {
+    border: 1px solid rgba(30, 123, 214, 0.8);
+    background: linear-gradient(
+      90deg,
+      rgba(8, 139, 255, 0.2) 0%,
+      rgba(8, 139, 255, 0) 53%,
+      rgba(8, 139, 255, 0.2) 100%
+    );
+    img {
+      width: 36px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+    input {
+      font-family:
+        PingFangSC,
+        PingFang SC;
+      font-weight: 400;
+      font-size: 20px;
+      color: #d4edfd;
+      text-shadow:
+        0px 0px 12px #0091ff,
+        0px 0px 5px #0091ff;
+    }
+  }
+  .ant-picker-cell-selected {
+    background: rgb(59, 59, 174, 0.2);
+    .ant-picker-cell-inner {
+      background: transparent;
+    }
+  }
+  .ant-picker-panel-container {
+    background: #010a1e;
+  }
+  .ant-picker-header {
+    color: #d4edfd;
+  }
+  .ant-picker-cell-in-view {
+    color: #d4edfd;
+    &:hover {
+      color: #00d3fd;
+      background: rgba(0, 0, 255, 0.2);
+      .ant-picker-cell-inner {
+        background: rgba(0, 0, 255, 0.2);
+      }
+    }
+  }
+  .ant-picker-content th {
+    color: #d4edfd;
+  }
+
+  .ant-picker-header-super-prev-btn,
+  .ant-picker-header-prev-btn,
+  .ant-picker-header-next-btn,
+  .ant-picker-header-super-next-btn {
+    color: #d4edfd;
+  }
+  .ant-picker-cell .ant-picker-cell-inner {
+    color: rgb(212, 237, 253);
+    &:hover {
+      background: rgba(0, 0, 255, 0.2) !important;
+      color: #00d3fd;
+    }
+  }
+  .ant-picker-dropdown {
+    z-index: 1090;
+  }
+
+  .ant-picker-time-panel .ant-picker-content {
+    .ant-picker-time-panel-column
+      > li.ant-picker-time-panel-cell-selected
+      .ant-picker-time-panel-cell-inner {
+      background: rgba(0, 0, 255, 0.2);
+    }
+    .ant-picker-time-panel-column
+      > li.ant-picker-time-panel-cell
+      .ant-picker-time-panel-cell-inner {
+      color: rgb(212, 237, 253);
+      &:hover {
+        background: rgba(0, 0, 255, 0.2);
+      }
+    }
+  }
+
+  .ant-picker-dropdown {
+    .ant-picker-range-arrow::after {
+      border-color: #010a1e #010a1e transparent transparent;
+    }
+  }
+  .ant-picker-footer {
+    .ant-btn-primary {
+      background: linear-gradient(180deg, rgba(8, 139, 255, 0.2) 0%, rgba(8, 139, 255, 0) 100%);
+      border-color: rgba(8, 139, 255, 0.4);
+      color: #7aa3cc;
+    }
+    .ant-btn-primary[disabled],
+    .ant-btn-primary[disabled]:hover,
+    .ant-btn-primary[disabled]:focus,
+    .ant-btn-primary[disabled]:active {
+      .ant-btn-primary;
+      opacity: 0.7;
+    }
+  }
+  .ant-picker-cell-in-view:hover {
+    .ant-picker-cell-inner {
+      background: linear-gradient(
+        180deg,
+        rgba(8, 139, 255, 0.2) 0%,
+        rgba(8, 139, 255, 0) 100%
+      ) !important;
+    }
+  }
+
+  .ant-picker-header {
+    border-bottom-color: rgba(8, 139, 255, 0.4);
+  }
+  .ant-picker-panel {
+    border-bottom-color: rgba(8, 139, 255, 0.4);
+    .ant-picker-footer {
+      border-top-color: rgba(8, 139, 255, 0.4);
+    }
+  }
+  .ant-picker-header > button {
+    color: #1890ff;
+  }
+  .ant-picker-datetime-panel .ant-picker-time-panel,
+  .ant-picker-time-panel-column:not(:first-child) {
+    border-left-color: rgba(8, 139, 255, 0.4);
+  }
+}
+
+/* 修改日期选择器下拉面板的字体大小 */
+.ant-picker-dropdown .ant-picker-panel {
+  font-size: 20px; /* 调整为你需要的字号 */
+}
+
+/* 修改日期单元格的字体大小 */
+.ant-picker-dropdown .ant-picker-cell-inner {
+  font-size: 20px;
+}
+
+/* 修改头部年月显示的字体大小 */
+.ant-picker-dropdown .ant-picker-header-view {
+  font-size: 20px;
+}
+.ant-picker-content {
+  .ant-picker-cell-in-view.ant-picker-cell-range-start:not(
+      .ant-picker-cell-range-start-single
+    )::before,
+  .ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single)::before,
+  .ant-picker-cell-in-view.ant-picker-cell-in-range::before {
+    background: rgba(8, 139, 255, 0.2);
+  }
+}

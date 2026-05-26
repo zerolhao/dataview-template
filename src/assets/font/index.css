@@ -1,0 +1,130 @@
+/* @font-face {
+  font-family: 'AlibabaPuHuiTi';
+  src: url('./Alibaba-PuHuiTi-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'AlibabaPuHuiTi';
+  src: url('./Alibaba-PuHuiTi-Heavy.ttf');
+  font-weight: bolder;
+}
+@font-face {
+  font-family: 'AlibabaPuHuiTi';
+  src: url('./Alibaba-PuHuiTi-Light.ttf');
+  font-weight: lighter;
+}
+@font-face {
+  font-family: 'AlibabaPuHuiTi';
+  src: url('./Alibaba-PuHuiTi-Medium.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'AlibabaPuHuiTi';
+  font-weight: 400;
+  src: url('./Alibaba-PuHuiTi-Regular.ttf');
+} */
+
+@font-face {
+  font-family: 'AlibabaPuHuiTi';
+  src:
+    url('./Alibaba-PuHuiTi-Bold.ttf'), url('./Alibaba-PuHuiTi-Heavy.ttf'),
+    url('./Alibaba-PuHuiTi-Light.ttf'), url('./Alibaba-PuHuiTi-Medium.ttf'),
+    url('./Alibaba-PuHuiTi-Regular.ttf');
+}
+
+/* @font-face {
+  font-family: 'DINPro-Black';
+  src: url('./DINPro-Black.otf');
+}
+
+@font-face {
+  font-family: 'DINPro-Bold';
+  src: url('./DINPro-Bold.otf');
+}
+
+@font-face {
+  font-family: 'DINPro-Light';
+  src: url('./DINPro-Light.otf');
+}
+
+@font-face {
+  font-family: 'DINPro-Medium';
+  src: url('./DINPro-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'DINPro-Regular';
+  src: url('./DINPro-Regular.otf');
+} */
+
+@font-face {
+  font-family: 'DINPro';
+  src: url('./DINPro-Regular.otf'), url('./DINPro-Black.otf'),
+    url('./DINPro-Bold.otf'),
+    url('./DINPro-Light.otf'),
+    url('./DINPro-Medium.ttf');
+}
+
+
+/* @font-face {
+  font-family: 'OPPOSans-B';
+  src: url('./OPPOSans-B.ttf');
+}
+
+@font-face {
+  font-family: 'OPPOSans-H';
+  src: url('./OPPOSans-H.ttf');
+}
+
+@font-face {
+  font-family: 'OPPOSans-L';
+  src: url('./OPPOSans-L.ttf');
+}
+
+@font-face {
+  font-family: 'OPPOSans-M';
+  src: url('./OPPOSans-M.ttf');
+}
+
+@font-face {
+  font-family: 'OPPOSans-R';
+  src: url('./OPPOSans-R.ttf');
+} */
+@font-face {
+  font-family: 'OPPOSans';
+  src: url('./OPPOSans-B.ttf'),
+    url('./OPPOSans-H.ttf'),
+    url('./OPPOSans-L.ttf'),
+    url('./OPPOSans-M.ttf'),
+    url('./OPPOSans-R.ttf');
+}
+
+@font-face {
+  font-family: 'PingFang';
+  src: url('./PingFang.ttc');
+}
+
+@font-face {
+  font-family: 'Source-KeynoteartHans';
+  src: url('./Source-KeynoteartHans-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Source-KeynoteartHans-Regular';
+  src: url('./Source-KeynoteartHans-Regular.otf');
+}
+
+@font-face {
+  font-family: 'DOUYUFont';
+  src: url('./DOUYUFont.otf');
+}
+
+@font-face {
+  font-family: 'YouSheBiaoTiYuan';
+  src: url('./YouSheBiaoTiYuan.otf');
+}
+
+@font-face {
+  font-family: 'YouSheBiaoTiHei';
+  src: url('./YouSheBiaoTiHei.ttf');
+}

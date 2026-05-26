@@ -1,0 +1,84 @@
+.ant-tree {
+  background: transparent !important;
+
+  font-family:
+    PingFangSC,
+    PingFang SC;
+  font-weight: 400;
+  font-size: 24px !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  line-height: 24px !important;
+  .ant-tree-switcher {
+    background: transparent !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.ant-tree .ant-tree-treenode {
+  width: 100%;
+  padding: 9px 0 !important;
+  &:hover,
+  &.ant-tree-treenode-selected {
+    background: linear-gradient(
+      270deg,
+      rgba(109, 178, 255, 0) 0%,
+      rgba(109, 178, 255, 0.2) 50%,
+      rgba(109, 178, 255, 0) 100%
+    ) !important;
+  }
+  &.noSelect {
+    background: none !important;
+    .ant-tree-node-content-wrapper {
+      cursor: default;
+    }
+  }
+}
+.ant-tree .ant-tree-node-content-wrapper {
+  flex-grow: 1;
+}
+.ant-tree .ant-tree-node-content-wrapper:hover {
+  background-color: transparent !important;
+}
+.ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+  background-color: transparent !important;
+  font-weight: 600;
+  color: #cfefff !important;
+}
+
+.ant-tree .ant-tree-checkbox {
+  font-family: FZLTHJW--GB1-0;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 0;
+  line-height: 20px;
+  overflow: hidden;
+  .ant-tree-checkbox-inner,
+  .ant-tree-checkbox-checked .ant-tree-checkbox-inner {
+    //     width: 16px;
+    // height: 16px;
+    background: #0a2043;
+    border: 1px solid #044783;
+    border-radius: 1px;
+    &::after {
+      border-color: #badfff;
+    }
+  }
+  .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner:after {
+    background: #badfff;
+    width: 6px;
+    height: 6px;
+    border-radius: 1px;
+  }
+  .ant-tree-checkbox-disabled .ant-tree-checkbox-inner {
+    border-color: #044783 !important;
+  }
+}
+
+.ant-tree .ant-tree-checkbox + span {
+  overflow: hidden;
+}
+.ant-tree .ant-tree-checkbox-disabled + span {
+  color: #fff;
+}
