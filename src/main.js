@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import './assets/font/index.css'
+import '@/assets/styles/main.css'
 import './assets/styles/index.less'
 
 import App from './App.vue'

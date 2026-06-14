@@ -1,5 +1,3 @@
-@import 'tailwindcss';
-
 // 重置ant样式
 @import './ant/Checkbox.less';
 @import './ant/Pagination.less';
@@ -14,161 +12,163 @@
 @import './ant/Popover.less';
 @import './ant/Slider.less';
 
-// 重置样式
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  user-select: none;
-}
+@layer base {
+  // 重置样式
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
 
-input {
-  outline: none;
-}
+  input {
+    outline: none;
+  }
 
-body {
-  font-family:
-    AlibabaPuHuiTi,
-    AlibabaPuHuiTi,
-    Inter,
-    -apple-system,
-    PingFang,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  font-size: 20px;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  body {
+    font-family:
+      AlibabaPuHuiTi,
+      AlibabaPuHuiTi,
+      Inter,
+      -apple-system,
+      PingFang,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-*::-webkit-scrollbar,
-.noScrollBar::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-}
+  *::-webkit-scrollbar,
+  .noScrollBar::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
 
-.myScrollBar::-webkit-scrollbar
+  .myScrollBar::-webkit-scrollbar
 
 /*控制滚动条的宽度*/ {
-  width: 5px;
-  height: 5px;
-}
+    width: 5px;
+    height: 5px;
+  }
 
-.myScrollBar::-webkit-scrollbar-thumb
-
-/*控制滚动条滑块的颜色、圆角、内阴影等*/ {
-  /* background: rgba(122, 163, 204, 0.1); */
-  background: rgba(53, 255, 244, 0.6);
-  border-radius: 5px;
-}
-
-.myScrollBar::-webkit-scrollbar-thumb:hover
+  .myScrollBar::-webkit-scrollbar-thumb
 
 /*控制滚动条滑块的颜色、圆角、内阴影等*/ {
-  background: #35fff4;
-}
+    /* background: rgba(122, 163, 204, 0.1); */
+    background: rgba(53, 255, 244, 0.6);
+    border-radius: 5px;
+  }
 
-.myScrollBar::-webkit-scrollbar-track
+  .myScrollBar::-webkit-scrollbar-thumb:hover
+
+/*控制滚动条滑块的颜色、圆角、内阴影等*/ {
+    background: #35fff4;
+  }
+
+  .myScrollBar::-webkit-scrollbar-track
 
 /*控制滚动条的轨道的圆角、内阴影等*/ {
-  border-radius: 5px;
-  background-color: rgba(122, 163, 204, 0.1);
-}
+    border-radius: 5px;
+    background-color: rgba(122, 163, 204, 0.1);
+  }
 
-#app {
-  width: 1920px;
-  height: 1080px;
-  position: relative;
-  background-color: #03050c;
-  overflow: hidden;
-}
+  #app {
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+    background-color: #03050c;
+    overflow: hidden;
+  }
 
-.myPage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #99c4d1;
-}
+  .myPage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #99c4d1;
+  }
 
-.loadingWrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: RGBA(0, 24, 45, 1);
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-}
+  .loadingWrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: RGBA(0, 24, 45, 1);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+  }
 
-.z-ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+  .z-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 
-.z-ellipsis-2 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box !important;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
+  .z-ellipsis-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
 
-.z-ellipsis-3 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box !important;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-}
+  .z-ellipsis-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
 
-.z-fill,
-img.fill {
-  width: 100%;
-  height: 100%;
-}
+  .z-fill,
+  img.fill {
+    width: 100%;
+    height: 100%;
+  }
 
-img.cover {
-  object-fit: cover;
-}
+  img.cover {
+    object-fit: cover;
+  }
 
-.z-flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .z-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.moduleTag::after {
-  content: '';
-  width: 22px;
-  height: 2px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-image: url('@/assets/imgs/box-right-ornament.png');
-  background-size: 100%;
-}
+  .moduleTag::after {
+    content: '';
+    width: 22px;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('@/assets/imgs/box-right-ornament.png');
+    background-size: 100%;
+  }
 
-.z-detail {
-  position: absolute;
-  z-index: 1020;
-}
+  .z-detail {
+    position: absolute;
+    z-index: 1020;
+  }
 
-.z-detail-index {
-  z-index: 1020;
+  .z-detail-index {
+    z-index: 1020;
+  }
 }
