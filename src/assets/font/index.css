@@ -120,6 +120,12 @@
 }
 
 @font-face {
+  font-family: 'DOUYU';
+  src: url('./DOUYUFont.otf');
+}
+
+
+@font-face {
   font-family: 'YouSheBiaoTiYuan';
   src: url('./YouSheBiaoTiYuan.otf');
 }
